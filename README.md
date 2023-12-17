@@ -4,7 +4,8 @@
 
 to run C code on mac:
 gcc first.c -o first
-^^ creates a file
+
+creates a file
 
 run through
 ./first
