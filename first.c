@@ -111,7 +111,7 @@ void mathTest()
     // math
     // ++ increment, -- decrement, % modulo, SAME AS JAVA
 
-    float a, b;
+    // float a, b;
     printf("Input an float: ");
     scanf("%f", &a);
 
@@ -131,8 +131,130 @@ void mathTest()
     printf("sqrt %f sqrt %f\n", sqrt(a), sqrt(b));
 }
 
+void conditionalIF()
+{
+    int a;
+    printf("Type an integer: ");
+    scanf("%d", &a);
+    if (a > 10)
+    {
+        printf("You typed %d. \n", a);
+        printf("You are above 10");
+    }
+    else
+    {
+        printf("You typed %d. \n", a);
+        printf("You are below 10");
+    }
+}
+
+void conditionalCase()
+{
+    char letter;
+    printf("Select a letter: ");
+    scanf("%c", &letter);
+
+    switch (letter)
+    {
+    case 'A':
+        printf("You selected %c the correct answer", letter);
+        break;
+    case 'B':
+        printf("You selected %c the incorrect answer", letter);
+        break;
+    case 'C':
+        printf("You selected %c the incorrect answer", letter);
+        break;
+    default:
+        printf("You selected %c the total wrong answer", letter);
+        break;
+    }
+}
+
+void caseDecisions()
+{
+    int nums;
+    printf("Select a number 1, 2, 3: ");
+    scanf("%d", &nums);
+    switch (nums)
+    {
+    case 1:
+        printf("Red");
+        break;
+    case 2:
+        printf("Green");
+        break;
+    case 3:
+        printf("Blue");
+        break;
+    default:
+        printf("No color");
+        break;
+    }
+}
+
+void loops()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        printf("Counting: %d\n", i);
+    }
+
+    int x;
+
+    x = 1;
+    while (x <= 10)
+    {
+        printf("%d\n", x);
+        x++;
+    }
+
+    char ch;
+
+    ch = 'A';
+    do
+    {
+        putchar(ch);
+        ch++;
+    }
+
+    while (ch != 'Z');
+
+    putchar('\n');
+
+    for (int i = 1; i <= 20; i++)
+    {
+        printf("%d\n", i);
+    }
+
+    int j = -10;
+    while (j <= 10)
+    {
+        if (j % 2 == 0)
+        {
+            printf("%d\n", j);
+        }
+        j++;
+    }
+}
+
+void evaluate(int a)
+{
+    if (a > 10)
+    {
+        printf("%d is above 10", a);
+    }
+    else if (a < 10)
+    {
+        printf("%d is below 10", a);
+    }
+    else
+    {
+        printf("%d is 10", a);
+    }
+}
 int main()
 {
-
+    evaluate(123);
     return (0);
 }
