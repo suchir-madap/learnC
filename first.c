@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h>  //to do math
+#include <ctype.h> // methods to do changes to characters
 
 int age = 10;
 
@@ -253,8 +254,24 @@ void evaluate(int a)
         printf("%d is 10", a);
     }
 }
+
+void characterMethods()
+{
+    int ch = 'a';
+
+    printf("Original %c\n", ch);
+    printf("Uppercase %c\n", toupper(ch));
+    printf("Lowercase %c\n", tolower(ch));
+
+    int ch2 = 'a';
+    printf("Original %c\n", ch2);
+    ch2 = toupper(ch2);
+    printf("Uppercase %c\n", ch2);
+}
+
 int main()
 {
-    evaluate(123);
+    int c;
+    
     return (0);
 }
